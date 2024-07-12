@@ -66,6 +66,7 @@ router.put("/:id", (req, res) => {
     // then display the message below
     res.status(404).send({error: `Transaction with id: ${id} not found!`});
   }
+});
 
   // DELETE SINGLE TRANSACTION
   //once again this is route to delete
@@ -90,7 +91,7 @@ router.delete("/:id", (req, res) => {
 
 
 
-});
+
 
 
   //this allows other files to utilize router  
